@@ -24,7 +24,7 @@ LOCAL_SRC_FILES:= \
 	old_test_suite.cc \
 	test_utils.cc
 LOCAL_MODULE:= racecheck_unittest
-LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_TAGS := eng
 
 LOCAL_CFLAGS := $(common_cflags)
 
