@@ -19,7 +19,7 @@ local_cflags := -DDYNAMIC_ANNOTATIONS_ENABLED=1
 local_src_files := dynamic_annotations.c
 
 LOCAL_MODULE := libdynamic_annotations
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_ARM_MODE := arm
 LOCAL_CFLAGS += $(local_cflags)
 LOCAL_SRC_FILES := $(local_src_files)

@@ -670,7 +670,7 @@ Addr setup_client_stack( void*  init_sp,
                to loaded shared libs, causing wrong address
                relocation e.g. when inserting breaks. */
             /* Android linker needs AT_BASE. Fixing Valgrind by breaking vgdb. */
-#           if !defined(VGPV_arm_linux_android) && !defined(VGPV_x86_linux_android)
+#           if !defined(VGPV_arm_linux_android)
             auxv->a_type = AT_IGNORE;
 #           endif
             auxv->u.a_val = info->interp_base;
